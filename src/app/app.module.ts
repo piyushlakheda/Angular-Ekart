@@ -10,6 +10,7 @@ import { AppSearchComponent } from './container/app-search/app-search.component'
 import { FormsModule } from '@angular/forms';
 import { ContainerComponent } from './container/container.component';
 import { ProductListComponent } from './container/product-list/product-list.component';
+import { ProductComponent } from './container/product-list/product/product.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { ProductListComponent } from './container/product-list/product-list.comp
     ContainerComponent,
     AppSearchComponent,
     ProductListComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,
