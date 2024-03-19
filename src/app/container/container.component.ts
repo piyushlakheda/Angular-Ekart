@@ -30,13 +30,13 @@ export class ContainerComponent {
   //   if(this.addToCart > 0){
   //     this.addToCart--;
   //   }
-    
+
   // }
 
   // incrementCartValue(){
   //   if(this.addToCart < this.product.inStock){
   //     this.addToCart++;
   //   }
-    
+
   // }
 }

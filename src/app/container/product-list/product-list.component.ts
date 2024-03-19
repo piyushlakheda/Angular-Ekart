@@ -537,4 +537,11 @@ export class ProductListComponent {
   totalInstockCount = this.products.filter(p=> p.is_in_inventory==true).length;
   totalOutstockCount = this.products.filter(p=> p.is_in_inventory==false).length;
 
+  selectedFilterButtonChanged: string = "all";
+
+  onFilterChanged(value : string){
+    this.selectedFilterButtonChanged = value;
+
+  }
+
 }
