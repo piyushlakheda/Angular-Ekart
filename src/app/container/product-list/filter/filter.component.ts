@@ -21,7 +21,9 @@ export class FilterComponent {
   selectedFilterRadioButton  : string =  'all';
 
   onSelectedFilterRadioButtonChanged(){
+    console.log("inside onSelected");
     this.selectedFilterRadioButtonChanged.emit(this.selectedFilterRadioButton);
+    console.log(this.selectedFilterRadioButton);
   }
 
 }

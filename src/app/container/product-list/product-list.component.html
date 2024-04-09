@@ -5,8 +5,9 @@
 
 <div class="ekart--products--container">
     <!-- *ngIf="selectedFilterButtonChanged=='all' || prod.is_in_inventory.toString()===selectedFilterButtonChanged -->
-    <div *ngFor="let prod of products" >
-        <product  [product]="prod" *ngIf="searchText ==='' || prod.name.toLowerCase().includes(searchText)"></product>
+    <!-- *ngIf="searchText ==='' || prod.name.toLowerCase().includes(searchText) -->
+    <div *ngFor="let prod of products" (click)="selectedProduct=prod" >
+        <product  [product]="prod"  *ngIf="searchText ==='' || prod.name.toLowerCase().includes(searchText)"></product>
 
     </div>
     
